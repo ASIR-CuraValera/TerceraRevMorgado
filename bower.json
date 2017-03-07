@@ -1,0 +1,23 @@
+{
+  "name": "Iboroubi",
+  "authors": [
+    "Alvaro"
+  ],
+  "description": "Tercera revisión de Morgado",
+  "main": "index.html",
+  "keywords": [
+    "bootstrap"
+  ],
+  "license": ".",
+  "homepage": ".",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
