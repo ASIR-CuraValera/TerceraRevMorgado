@@ -1,0 +1,8 @@
+.submenu {
+    width: inherit!important;
+}
+
+    .submenu {
+        height: 65px!important;
+        line-height: 65px!important;
+    }

@@ -2,11 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, width=380">
+    <meta name="viewport" content="width=device-width, user-scalable=no, width=365">
     <title>Iboroubi Index</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet' media='(max-width: 480px)' href='css/xs.css' />
+    <link rel='stylesheet' media='screen and (min-width: 481px) and (max-width: 992px)' href='css/sm.css' />
+    <link rel='stylesheet' media='screen and (min-width: 993px) and (max-width: 1200px)' href='css/md.css' />
+    <link rel='stylesheet' media='(max-width: 1201px)' href='css/lg.css' />
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
@@ -19,19 +23,23 @@
                 <div class="col-fixed-logo">
                     
                 </div>
-                <div class="col-xs-1 hidden-md hidden-lg">
-                    
-                </div>
-                <div class="col-xs-8 col-md-9 redes">
-                    <p>
-                        Nuestras redes
-                    </p>
-                    <p>
-                        <span class="fa fa-fw fa-facebook-square"></span>
-                        <span class="fa fa-fw fa-twitter"></span>
-                        <span class="fa fa-fw fa-youtube"></span>
-                        <span class="fa fa-fw fa-google-plus-square"></span>
-                    </p>
+                <div class="container-fluid submenu">
+                    <div class="row">
+                        <div class="col-xs-2 hidden-md hidden-lg">
+
+                        </div>
+                        <div class="col-xs-10 col-sm-12 redes">
+                            <p class="visible-md">
+                                Nuestras redes
+                            </p>
+                            <p>
+                                <span class="fa fa-fw fa-facebook-square"></span>
+                                <span class="fa fa-fw fa-twitter"></span>
+                                <span class="fa fa-fw fa-youtube"></span>
+                                <span class="fa fa-fw fa-google-plus-square"></span>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-12 visible-md visible-lg menu">
                     <nav class="menu-escritorio">

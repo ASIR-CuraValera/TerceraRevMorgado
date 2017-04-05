@@ -9,11 +9,11 @@
 
 header .row {
     position: relative;
+    overflow: hidden;
 }
 
-header .row {
+header > .container-fluid > .row {
     background-color: #660066;
-    overflow: hidden;
 }
 
 header .row > .col-fixed-logo {
@@ -22,13 +22,32 @@ header .row > .col-fixed-logo {
     background-position: center;
     height: 90px;
     width: 300px;
+    float: left;
 }
 
 @media (max-width: 768px) {
-  header .row > .col-fixed-logo {
-    background-image: url(../img/logo-peque.png);
-      width: 175px;
-  }
+    header .row-fluid > .col-fixed-logo {
+        background-image: url(../img/logo-peque.png);
+        width: 175px;
+    }
+    .redes {
+        font-size: 18px!important;
+    }
+    header .row > .col-fixed-logo {
+        background-image: url(../img/logo-peque.png);
+        height: 65px!important;
+        width: 180px!important;
+    }
+    .submenu {
+        height: 65px!important;
+        line-height: 65px!important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .redes {
+        line-height: 90px!important;
+    }
 }
 
 .fondo_animado {
@@ -88,6 +107,11 @@ a:hover {
 .menu-escritorio a:hover,
 .redes span:hover{
     color: #ff00ff;
+}
+
+.submenu {
+    float: right;
+    height: 90px;
 }
 
 /* ---- */
