@@ -42,12 +42,22 @@ header .row > .col-fixed-logo {
         height: 65px!important;
         line-height: 65px!important;
     }
+    .boton-menu {
+        font-size: 18px!important;
+        top: 4px!important;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    .redes {
+    .submenu {
         line-height: 90px!important;
     }
+}
+
+.boton-menu {
+    color: white;
+    font-size: 25px;
+    top: 8px;
 }
 
 .fondo_animado {
@@ -100,12 +110,12 @@ a:hover {
 }
 
 .menu-escritorio a,
-.redes span:hover {
+header span:hover {
     transition: 1s;
 }
 
 .menu-escritorio a:hover,
-.redes span:hover{
+header span:hover{
     color: #ff00ff;
 }
 
@@ -118,6 +128,10 @@ a:hover {
 
 main {
     position: relative;
+}
+
+.contenido {
+    padding: 0!important;
 }
 
 .intel_video {

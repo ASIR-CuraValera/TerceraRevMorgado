@@ -1,21 +1,20 @@
-var viewport = document.querySelector("meta[name=viewport]");
-if (viewport) {
-    var content = viewport.getAttribute("content");
-    var parts = content.split(",");
-    for (var i = 0; i < parts.length; ++i) {
-        var part = parts[i].trim();
-        var pair = part.split("=");
-        if (pair[0] === "min-width") {
-            var minWidth = parseInt(pair[1]);
-            if (screen.width < minWidth) {
-                document.head.removeChild(viewport);
+var tog = true;
 
-                var newViewport = document.createElement("meta");
-                newViewport.setAttribute("name", "viewport");
-                newViewport.setAttribute("content", "width=" + minWidth);
-                document.head.appendChild(newViewport);
-                break;
-            }
+$(document).ready(function() {
+    $(".boton-menu").on('click', function() {
+        if(tog) {
+            $(".menu-desp").animate({width: '0'}, 1000, function() {
+                $(this).hide(); //.effect('slide', { direction: 'left', mode: 'hide' }, 500);
+            });
+            $(".contenido").animate({width: '100%'}, 1000);
+            tog = false;
         }
-    }
-}
+        else {
+            $(".menu-desp").show();
+            $(".menu-desp").animate({width: '33.333%'}, 1000);
+            $(".contenido").css("float", "right");
+            $(".contenido").animate({width: '66%'}, 1000);
+            tog = true;
+        }
+    });
+});
