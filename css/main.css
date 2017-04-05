@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+/*header .row > div {
+    display: flex;
+    align-items: center;
+}*/
+
+header .row {
+    position: relative;
+}
+
+header .row {
+    background-color: #660066;
+    overflow: hidden;
+}
+
+header .row > .col-fixed-logo {
+    background-image: url(../img/logo-mediano.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90px;
+    width: 300px;
+}
+
+@media (max-width: 768px) {
+  header .row > .col-fixed-logo {
+    background-image: url(../img/logo-peque.png);
+      width: 175px;
+  }
+}
+
+.fondo_animado {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/transgrunge.png);
+    animation: slide 60s linear infinite;
+    width: 5076px;
+}
+
+a, a:active, a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.menu {
+    height: 30px;
+    line-height: 30px;
+}
+
+.menu-escritorio {
+    
+}
+
+.menu-escritorio li {
+    display: inline-block;
+    list-style-type: none;
+    width: calc(100% / 5 - 4px);
+}
+
+.redes {
+    text-align: right;
+    font-size: 25px;
+    color: white;
+}
+
+.redes span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu-escritorio a {
+    color: white;
+    font-weight: bold;
+}
+
+.menu-escritorio a,
+.redes span:hover {
+    transition: 1s;
+}
+
+.menu-escritorio a:hover,
+.redes span:hover{
+    color: #ff00ff;
+}
+
+/* ---- */
+
+main {
+    position: relative;
+}
+
+.intel_video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.transgrunge {
+    position: absolute;
+    float: left;
+    background-image: url(../img/transgrunge.png);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    filter: invert(1) grayscale(100%);
+}
+
+.intel_video_overlay {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: purple;
+    z-index: 2;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes slide {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
