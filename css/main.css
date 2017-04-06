@@ -100,7 +100,7 @@ a:hover {
 }
 
 .redes span:hover {
-    text-decoration: underline;
+    transform: scale(1.5);
     cursor: pointer;
 }
 
@@ -125,13 +125,18 @@ a:hover {
     border: 1px solid black;
 }
 
+.active:hover {
+    cursor: auto;
+}
+
 .menu-escritorio a,
-header span:hover {
+header span:hover,
+header span:not(:hover) {
     transition: 1s;
 }
 
 .menu-escritorio a:hover,
-header span:hover{
+header span:hover {
     color: #ff00ff;
 }
 
@@ -148,6 +153,7 @@ header span:hover{
     list-style-type: none;
     padding: 5px;
     transition: 1s;
+    cursor: pointer;
 }
 
 .menu-peque .active {
@@ -217,6 +223,19 @@ main {
     text-align: center;
     color: purple;
     z-index: 2;
+}
+
+.menu-desp {
+    display: none;
+}
+
+.contenido {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.subcontenido {
+    padding: 10px;
 }
 
 footer {
