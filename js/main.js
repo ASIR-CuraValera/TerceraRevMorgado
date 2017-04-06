@@ -27,8 +27,14 @@ $(document).ready(function() {
     
     //Asignación de propiedades, pero esta vez, usando el método de los elementos futuros
     
-    
+    $("header").on("click", ".menu a", menu_carga);
+    $("main").on("click", ".menu-desp a", menu_carga);
 });
+
+function menu_carga() {
+    cargar(".contenido", "web/html/"+$(this).attr("href"), null);
+    return false;
+}
 
 function cargar(el, ruta, fn) {
     $.ajax({
